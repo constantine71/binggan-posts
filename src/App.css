@@ -1,0 +1,94 @@
+@font-face {
+  font-family: "Gloria Hallelujah";
+  font-style: normal;
+  font-weight: 400;
+  font-display: fallback;
+  src: local("Gloria Hallelujah"), local("GloriaHallelujah"),
+    url(fonts/font.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+}
+.App {
+  text-align: center;
+}
+
+body {
+  margin: 0;
+  font-family: "Gloria Hallelujah", "ZCOOL KuaiLe", cursive，sans-serif;
+  font-size: 22px;
+  font-display: fallback;
+  letter-spacing: 0.05em;
+  line-height: 2;
+}
+
+article {
+  padding: 15px 20px 40px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+#logo {
+  float: left;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  padding: 10px;
+  margin-right: 10px;
+}
+
+a,
+a:hover,
+a:visited {
+  color: inherit;
+  text-decoration: none;
+  outline: none;
+}
+
+.textlink {
+  box-shadow: 0 -6px #f0e6f4 inset;
+}
+wired-button {
+  margin: 5px 10px;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  background: #f0e6f4;
+}
+
+wired-card {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+@media (max-width: 600px) {
+  body {
+    font-size: 19px;
+    letter-spacing: 0.05em;
+  }
+
+  article {
+    padding: 5px 16px 40px;
+  }
+}
+
+.card-grid {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+wired-card {
+  max-width: 100%;
+}
+#delete-button {
+  background: red;
+}
+#delete-button:hover {
+  background: yellow;
+}
+
+#check {
+  background: red;
+}
